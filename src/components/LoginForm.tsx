@@ -38,10 +38,10 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin, error }) => {
             <Icon name="Music" size={32} className="text-white" />
           </div>
           <CardTitle className="text-2xl font-bold text-white">
-            Добро пожаловать
+            Добра утра, Таира Крофт!
           </CardTitle>
           <CardDescription className="text-purple-200">
-            Введите пароль для доступа к музыкальной коллекции
+            Введите код доступа
           </CardDescription>
         </CardHeader>
         <CardContent>

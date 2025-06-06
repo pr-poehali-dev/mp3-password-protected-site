@@ -5,7 +5,7 @@ import AudioPlayer from "@/components/AudioPlayer";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 
-const CORRECT_PASSWORD = "music123"; // Здесь можно изменить пароль
+const CORRECT_PASSWORD = "ротфронт"; // Здесь можно изменить пароль
 
 const Index = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
