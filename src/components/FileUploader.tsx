@@ -38,30 +38,30 @@ const FileUploader: React.FC<FileUploaderProps> = ({
   }, []);
 
   return (
-    <Card className="border-2 border-dashed border-purple-300 hover:border-purple-400 transition-colors">
+    <Card className="border-2 border-dashed border-purple-400 hover:border-purple-300 transition-colors bg-gradient-to-br from-purple-800 to-purple-700">
       <CardContent className="p-8">
         <div
           className="text-center space-y-4"
           onDrop={handleDrop}
           onDragOver={handleDragOver}
         >
-          <div className="mx-auto w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
+          <div className="mx-auto w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-500 rounded border-2 border-purple-400 flex items-center justify-center shadow-inner">
             {isUploading ? (
               <Icon
                 name="Loader2"
                 size={32}
-                className="text-purple-600 animate-spin"
+                className="text-purple-200 animate-spin"
               />
             ) : (
-              <Icon name="Upload" size={32} className="text-purple-600" />
+              <Icon name="Upload" size={32} className="text-purple-200" />
             )}
           </div>
 
           <div className="space-y-2">
-            <h3 className="text-lg font-semibold text-gray-900">
+            <h3 className="text-lg font-semibold text-white">
               {isUploading ? "Загрузка файла..." : "Загрузите MP3 файл"}
             </h3>
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-purple-300">
               Перетащите файл сюда или нажмите кнопку ниже
             </p>
           </div>
@@ -76,11 +76,11 @@ const FileUploader: React.FC<FileUploaderProps> = ({
             />
             <Button
               variant="outline"
-              className="pointer-events-none"
+              className="pointer-events-none border-purple-400 text-purple-200 bg-purple-700"
               disabled={isUploading}
             >
               <Icon name="FolderOpen" size={16} />
-              Выбрать файл
+              📁 Выбрать файл
             </Button>
           </div>
         </div>

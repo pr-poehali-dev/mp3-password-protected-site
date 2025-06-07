@@ -47,27 +47,27 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 text-white">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         {/* Header */}
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center justify-between mb-8 bg-gradient-to-r from-purple-700 to-purple-600 p-4 rounded border-2 border-purple-500 shadow-lg">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-400 rounded border-2 border-purple-300 flex items-center justify-center shadow-inner">
               <Icon name="Music" size={24} className="text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">
-                Музыкальная Коллекция
+              <h1 className="text-2xl font-bold text-white drop-shadow-lg">
+                Доступ активирован
               </h1>
-              <p className="text-gray-600">
-                Загружайте, слушайте и скачивайте MP3
+              <p className="text-purple-200">
+                Музыкальная система готова к работе
               </p>
             </div>
           </div>
           <Button
             onClick={handleLogout}
             variant="outline"
-            className="text-gray-600 hover:text-gray-900"
+            className="border-purple-300 text-purple-200 hover:text-white hover:bg-purple-600 bg-purple-700"
           >
             <Icon name="LogOut" size={16} />
             Выйти
@@ -86,22 +86,17 @@ const Index = () => {
           )}
 
           {uploadedFile && (
-            <div className="text-center">
-              <Button
-                onClick={() => setUploadedFile(null)}
-                variant="outline"
-                className="border-purple-300 text-purple-700 hover:bg-purple-50"
-              >
-                <Icon name="Plus" size={16} />
-                Загрузить другой файл
-              </Button>
+            <div className="mt-8 text-center">
+              <div className="text-purple-300 text-sm">
+                🎵 Система Windows Media Player 2000
+              </div>
             </div>
           )}
         </div>
 
         {/* Footer */}
-        <div className="mt-12 text-center text-gray-500 text-sm">
-          <p>🎵 Наслаждайтесь музыкой в безопасном пространстве</p>
+        <div className="mt-12 text-center text-purple-400 text-sm border-t border-purple-600 pt-6">
+          <p>🔒 Защищенный музыкальный терминал • Windows NT 5.0</p>
         </div>
       </div>
     </div>
